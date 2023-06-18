@@ -33,8 +33,8 @@ behavior EgoBehavior():
         do FollowLaneBehavior(target_speed=globalParameters.EGO_SPEED)
     interrupt when withinDistanceToObjsInLane(self, globalParameters.SAFETY_DIST) and (ped in network.drivableRegion):
         take SetBrakeAction(EGO_BRAKE)
-    #interrupt when withinDistanceToAnyObjs(self, CRASH_DIST):
-    #    terminate
+    interrupt when withinDistanceToAnyObjs(self, CRASH_DIST):
+        terminate
 
 #################################
 # SPATIAL RELATIONS             #
