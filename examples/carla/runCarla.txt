@@ -1,0 +1,2 @@
+scenic examples/driving/badlyParkedCarPullingIn.scenic --simulate  --model scenic.simulators.carla.model  --time 200
+scenic examples/carla/pedestrian.scenic --simulate  --model scenic.simulators.carla.model  --time 200

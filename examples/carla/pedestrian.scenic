@@ -1,4 +1,4 @@
-param map = localPath('../../tests/formats/opendrive/maps/CARLA/Town03.xodr')
+param map = localPath('../../tests/formats/opendrive/maps/CARLA/Town05.xodr')
 model scenic.simulators.carla.model
 
 ego = Car
