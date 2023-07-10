@@ -1,6 +1,17 @@
+# My simple README file for running on Carla successfully
+---------------------------------------------------------
+
+# Install `Scenic-1.1.0.vsix` VS Code plugin if you want to edit your Scenic script with highlighting capabilities.
+
 ## CARLA_0.9.13
 ## activate carla
-## go to the document page to install scenic
+## go to the document page to install scenic: 
+#  Recommended to install Carla virtual environment first using above Python 3.8 then install Scenic under Carla virtual environment using the command below:
+git clone https://github.com/BerkeleyLearnVerify/Scenic # done!
+cd Scenic # done!
+# the command below is to be done if not done yet
+python -m pip install -e . 
+
 
 ## Add the line below whenever you want to run in Carla
 --simulate  --model scenic.simulators.carla.model  --time 200
@@ -9,3 +20,18 @@
 scenic examples/driving/badlyParkedCarPullingIn.scenic --simulate  --model scenic.simulators.carla.model  --time 200
 scenic examples/carla/pedestrian.scenic --simulate  --model scenic.simulators.carla.model  --time 200
 scenic examples/carla/NHTSA_Scenarios/pedestrian/my_pedestrian.scenic --simulate  --model scenic.simulators.carla.model  --time 200
+
+-----------------------------------------------------------
+## Known Issues
+### 1. `Fatal Error` on running CarlaUE4 application, please go directly to the application folder and use command in console to redirect the port to a newer one like 3001 shown below:
+CarlaUE4.exe -carla-rpc-port=3001
+
+### Or you can find the process that is holding the port `2000` and kill that process based on your need:
+netstat -ano | findstr :<PORT>
+taskkill /PID <PID> /F
+
+
+
+
+## More information from the official document site: 
+https://scenic-lang.readthedocs.io/en/latest/quickstart.html
