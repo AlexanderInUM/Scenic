@@ -18,6 +18,7 @@ python -m pip install -e .
 
 ## Some Examples
 scenic examples/driving/badlyParkedCarPullingIn.scenic --simulate  --model scenic.simulators.carla.model  --time 200
+scenic examples/carla/adjacentOpposingPair.scenic --simulate  --model scenic.simulators.carla.model  --time 200
 scenic examples/carla/pedestrian.scenic --simulate  --model scenic.simulators.carla.model  --time 200
 scenic examples/carla/NHTSA_Scenarios/pedestrian/my_pedestrian.scenic --simulate  --model scenic.simulators.carla.model  --time 200
 
@@ -29,6 +30,9 @@ CarlaUE4.exe -carla-rpc-port=3001
 ### Or you can find the process that is holding the port `2000` and kill that process based on your need:
 netstat -ano | findstr :<PORT>
 taskkill /PID <PID> /F
+
+## With low resolution mode:
+CarlaUE4 -dx11 -carla-rpc-port=3001
 
 
 
