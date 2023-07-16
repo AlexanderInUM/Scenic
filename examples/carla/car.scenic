@@ -1,3 +1,4 @@
+param port = 3001
 param map = localPath('../../tests/formats/opendrive/maps/CARLA/Town01.xodr')
 model scenic.simulators.carla.model
 
