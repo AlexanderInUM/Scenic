@@ -1,6 +1,7 @@
 param port = 3001
-param map = localPath('../../tests/formats/opendrive/maps/CARLA/Town05.xodr')
-param carla_map = 'Town05'
+# param map = localPath('../../tests/formats/opendrive/maps/CARLA/Town05.xodr')
+param map = localPath('../../tests/formats/opendrive/maps/CARLA/Learning.xodr')
+# param carla_map = 'Town05'
 param time_step = 1.0/10
 
 model scenic.simulators.carla.model
