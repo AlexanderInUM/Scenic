@@ -20,6 +20,7 @@ python -m pip install -e .
 scenic examples/driving/badlyParkedCarPullingIn.scenic --simulate  --model scenic.simulators.carla.model  --time 200
 scenic examples/carla/pedestrian.scenic --simulate  --model scenic.simulators.carla.model  --time 200
 scenic examples/carla/NHTSA_Scenarios/pedestrian/my_pedestrian.scenic --simulate  --model scenic.simulators.carla.model  --time 200
+scenic examples/carla/myscene.scenic --simulate  --model scenic.simulators.carla.model  --time 2000
 
 -----------------------------------------------------------
 ## Known Issues

@@ -1,7 +1,8 @@
-param port = 3001
-# param map = localPath('../../tests/formats/opendrive/maps/CARLA/Town05.xodr')
-param map = localPath('../../tests/formats/opendrive/maps/CARLA/Learning.xodr')
-# param carla_map = 'Town05'
+param port = 3333
+param map = localPath('../../tests/formats/opendrive/maps/CARLA/Town05.xodr')
+# param map = localPath('../../tests/formats/opendrive/maps/CARLA/AU.xodr')
+param carla_map = 'Town05'
+# param carla_map = 'AU'
 param time_step = 1.0/10
 
 model scenic.simulators.carla.model
@@ -189,7 +190,7 @@ EGO_SPEED = 10
 param EGO_SPEED = VerifaiRange(7, 10)
 param EGO_BRAKE = VerifaiRange(0.7, 1.0)
 
-param ADV_DIST = VerifaiRange(10, 15)
+param ADV_DIST = VerifaiRange(5, 10)
 param ADV_INIT_SPEED = VerifaiRange(2, 4)
 param ADV_END_SPEED = 2 * VerifaiRange(7, 10)
 ADV_BUFFER_TIME = 5
